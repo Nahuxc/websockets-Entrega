@@ -9,19 +9,18 @@ function configureSocket(httpServer){
 
         console.log("funcionando socket");
         const productos = await ProductManager.getProducts()
-        socket.emit("serverLoadProd", productos )
+        socketServer.emit("serverLoadProd", productos )
 
         socket.on("clientNewProd", async data =>{
             const producto = {...data}
             const añadir = await ProductManager.save(producto)
             console.log(`se creo el producto ${añadir}`);
-            socket.emit("serverNewProd", producto)
+            socketServer.emit("serverNewProd", producto)
         })
-
         socket.on("clientDeleteProd", async (prodId) =>{
             const productos = await ProductManager.getProducts()
             const productoId = productos.filter((prod) => prod.id !== prodId);
-            socket.emit("serverLoadProd", productos[productoId])
+            socketServer.emit("serverLoadProd", productos[productoId])
 
         })
     })
