@@ -1,0 +1,20 @@
+<div>
+    <div class="box-form">
+        <form class="form" id="form-generator">
+            <h1 class="title-generator">Crea Tu Producto</h1>
+            <input type="text" id="title" name="title" placeholder="nombre del producto"> 
+            <textarea id="description" name="description" placeholder="descripcion del producto" cols="2" rows="5"></textarea>
+            <input type="number" id="price" name="price"  placeholder="precio del producto">
+            <input type="number" id="stock" name="stock"  placeholder="stock del producto">
+
+            <button onclick="send()" type="submit" class="btn" id="btn-send">Crear</button>
+        </form>
+    </div>
+
+    <div id="cards">
+
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="./js/crearProd.js"></script>
