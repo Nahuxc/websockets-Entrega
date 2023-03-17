@@ -25,7 +25,6 @@ routerViews.get('/realTimeProducts', async (req, res) => {
 
 
 
-
 module.exports = {
     routerViews,
 };

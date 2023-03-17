@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: white;
+    background-color: rgb(2, 112, 255);
 }
 
 .content{
@@ -31,6 +31,75 @@ body{
     box-shadow: 0 5px 10px rgba(117, 93, 79, 0.3);
 }
 
+.div-titule-2{
+
+    text-align: left;
+}
+
+.content-2{
+    padding: 30px 30px;
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    
+}
+
+.div-2{
+    background-color: white;
+    padding: 50px;
+    margin: 15px 30px;
+    box-shadow: 0 5px 10px rgba(117, 93, 79, 0.3);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.div-btn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.btn-delete{
+    background-color: rgb(255, 64, 64);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0px 10px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.btn-update{
+    background-color: rgb(71, 160, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.btn-update:hover{
+    background-color: rgb(39, 140, 249);
+}
+
+.btn-delete:hover{
+    background-color: rgb(249, 35, 35);
+}
+
 a{
     text-decoration: none;
     background-color: rgb(0, 140, 255);
@@ -43,9 +112,7 @@ a{
 
 .box-form{
     padding: 30px 30px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 30%;
     text-align: center;
     justify-content: center;
     align-items: flex-end;
@@ -56,8 +123,8 @@ a{
     justify-content: center;
     flex-direction: column;
     background-color: white;
-    padding: 15px;
-    margin: 15px 30px;
+    padding: 50px;
+    margin: 20px 30px;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgba(117, 93, 79, 0.3);
 }
